@@ -1,0 +1,16 @@
+[package]
+name = "thumbv6-div-repro"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+test = false
+name = "thumbv6-div-repro"
+
+[dependencies]
+
+[profile.release]
+lto = "fat"
+opt-level = 'z'
